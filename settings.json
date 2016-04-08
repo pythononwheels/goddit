@@ -1,0 +1,20 @@
+{
+    "port": 8080,
+    "debug": true,
+    "template_path": "layouts",
+    "static_path": "static",
+    "image_path": "static/images",
+    "site_path": "site",
+    "static_url_prefix": "static",
+    "theme" : "goddit",
+    "encoding": "utf-8",
+    "strftime_format": "%Y-%m-%d %H,%M,%S",
+    "autoescape": false,
+    "use_absolute_urls": false,
+    "index_filename": "index.html",
+    "base_url": "http,//pythononwheels.github.io",
+    "twitter": "pythononwheels",
+    "github": "pythononwheels",
+    "googleplus": null,
+    "facebook": null
+}
