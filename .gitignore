@@ -17,3 +17,4 @@ __pycache__
 *.back
 thumbnails-cache/
 #static/images/*
+goddit_app_token.py

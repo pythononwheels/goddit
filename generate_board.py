@@ -22,8 +22,7 @@ import math
 from tornado import template
 import theme_configs
 
-from static.config import settings
-import static.modules.twitter_comments as twitter_comments
+from config import settings
 from tinydb import TinyDB, Query, where
 
 
