@@ -62,9 +62,15 @@ def cleanup():
     print(dashes*"-")
     print("... Cleaning up: ...")
     print(dashes*"-")
-    cleandir(settings["static_path"])
     # remove all files
+    cleandir(settings["static_path"])
+
     path= os.path.abspath(os.path.join(".",settings["site_path"]))
+    try:
+        os.mkdir(path)
+    except Exception as e:
+        print("Error creating site_path dir " + str(e))
+        
     all =[os.path.join(path,f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
     #for f in all:
     #    print(" ... removing: " + str(f))
